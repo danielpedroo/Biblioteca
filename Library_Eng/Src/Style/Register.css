@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+/* Personalizacao Formulario*/
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 550px;
+    margin-top: 100px;
+    margin-left: 500px;
+}
+
+.formsBooks{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 30px;    
+    border-radius: 30px;
+    background-color: aquamarine;
+}
+
+.container .formsBooks label {
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    color: #b2b2b2;
+    display: flex;
+}
+
+.container .formsBooks input{
+    width: 200px;
+    height: 30px;
+    border: #b2b2b2 1px solid;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Categoria do livro -> Category*/
+.category{
+    margin-left: 230px;
+    margin-top: -43px;
+}
+
+.categoryBook{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+}
+
+/*Ano do livro */
+.year{
+    margin-left: 230px;
+    margin-top: 20px;
+}
+
+/*titulo do livro*/
+.title{
+    margin-top: -45px;
+}
+
+/*editora do livro*/
+
+.publishing{
+    margin-left: 120px;
+    margin-top: 10px;
+}
+
+/*valor de aquisicao*/
+.aquisitionValue{
+    padding: 5px 0px 5px 0px;
+}
+
+/*edicao do livro*/
+.edition{
+    padding: 5px 0px 5px 0px;
+}
+
+/* Isbn */
+.codeIsbn{
+    padding: 5px 0px 5px 0px;
+}
+
+/*numero de paginas*/
+.numberPages{
+    padding: 5px 0px 5px 0px;
+}
+
+/*sinopse - Text Area*/
+
+.sinopse{
+    position: absolute;
+    margin-left: 230px;
+    top: 375px;
+    
+}
+
+.sinopse .sinopseBook{
+    outline: none;
+    border-radius: 5px;
+    border: #b2b2b2 1px solid;
+}
+
+/*dimensoes do livro*/
+
+.dimension{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    color: #b2b2b2;
+    margin-top: 10px;
+}
+
+.dimensionBook{
+    display: grid;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+/*btn CRUD*/
+.registerQueryAlterBook{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 30px;
+   
+}
+
+.registerQueryAlterBook button{
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    background-color: transparent;
+    border: #b2b2b2 2px solid;
+    color: #b2b2b2;
+}
+
+.registerQueryAlterBook .btn_registerBook:hover{
+    color: #00FF00;
+    border: #00FF00 2px solid;
+}
+
+.registerQueryAlterBook .btn_alterBook:hover{
+    color: #808000;
+    border: #808000 2px solid;
+}
+
+.registerQueryAlterBook .btn_queryBook:hover{
+    color: #FF4500;
+    border: #FF4500 2px solid;
+}
+
+/*Grupo de precificação*/
+.precificationGroup{
+    margin-top: 10px;
+}
+
+
+/*Codigo de barras*/
+.codeBar{
+    margin-top: 10px;
+}
+
+.codeBar .codeBarSpan{
+    display: flex;  
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    color: #b2b2b2;
+}

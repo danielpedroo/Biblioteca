@@ -3,24 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <!--Link css-->
-    <link rel="stylesheet" href="../Style/Style.css">
+    <link rel="stylesheet" href="../Style/Register.css">
     <link rel="stylesheet" href="../Style/Reset.css">
 
     <!--Link Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--Font Google-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-
-    
     <title>Cadastro de livros</title>
 </head>
 <body>
     
+<div class="container">
 
+    <form method="post" class="formsBooks">
+        <div class="author">
+            <label for="nameAuthorBookLabel">Autor </label>
+            <input type="text" class="nameAuthorBook" id="nameAuthorBookLabelId" name="nameAuthorBookLabel">
+        </div>
+            
+        <div class="category">
+            <label for="categoryBookLabel">Categoria </label>
+            <select class="categoryBook" id="categoryBookId" name="categoryBookLabel">
+                <option selected> -- </option>
+                <option value="genLirico">Gênero Lirico</option>
+                <option value="genEpicoNarrativo">Gênero Épico/Narrativo</option>
+                <option value="genDramatico">Gênero Dramatico</option>
+            </select>
+        </div>
+
+        <div class="year">
+            <label for="yearBookLabel">Ano </label>
+            <input type="date" class="yearBook" id="yearBookId" name="yearBookLabel">
+        </div>
+
+    <div class="title">
+        <label for="titleBookLabel">Titulo </label>
+        <input type="text" class="titleBook" id="titleBookId" name="titleBookLabel">
+    </div>
+
+    <div class="publishing">
+        <label for="publishingCompanyaBookLabel">Editora </label>
+        <input type="text" class="publishingCompanyaBook" id="publishingCompanyaBookId" name="publishingCompanyaBookLabel">
+    </div>
+
+    <div class="aquisitionValue">
+        <label for="aquisitionValueBookLabel">Valor de aquisição </label>
+        <input type="number" class="aquisitionValueBook" id="aquisitionValueBookId" name="aquisitionValueBookLabel">
+    </div>
+
+    <div class="edition">
+        <label for="editionBookLabel">Edição </label>
+        <input type="text" class="editionBook" id="editionBookId" name="editionBookLabel">
+    </div>
+
+    <div class="codeIsbn">
+        <label for="codeIsbnBookLabel">ISBN </label>
+        <input type="number" class="codeIsbnBook" id="codeIsbnBookId" name="codeIsbnBookLabel">
+    </div>
+
+    <div class="numberPages">
+        <label for="numberPagesBookLabel">Numero de paginas </label>
+        <input type="number" class="numberPagesBook" id="numberPagesBookId" name="numberPagesBookLabel">
+    </div>
+
+    <div class="sinopse">
+        <label for="sinopseBookLabel">Sinopse </label>
+        <textarea class="sinopseBook" id="sinopseBookId" cols="35" rows="10" name="sinopseBookLabel"></textarea>
+    </div>
+        
+    <span class="dimension">Dimensões</span>
+
+    <div class="dimensionBook">    
+        <label for="heightBookLabel">Altura: </label>
+        <input type="number" class="heightBook" id="heightBookId">
+        
+        <label for="widthBookLabel">Largura: </label>
+        <input type="number" class="widthBook" id="widthBookId">
+        
+        <label for="weightBookLabel">Peso: </label>
+        <input type="number" class="weightBook" id="weightBookId">
+        
+        <label for="depthBookLabel">Profundidade: </label>
+        <input type="number" class="depthBook" id="depthBookId">
+    </div>
+    
+    <div class="precificationGroup">
+        <label for="precificationGroupLabel">Precificação</label>
+        <input type="number" name="precificationGroupLabel" id="precificationGroupId">
+    </div>
+
+    <div class="codeBar">
+        <span class="codeBarSpan">Código de Barras</i></span>
+        <input type="text" id="codeBarId">
+    </div>
+    
+
+        <div class="registerQueryAlterBook">
+            <button type="submit" class="btn_queryBook" id="btn_queryBookId">Consultar Livro</button>
+            <button type="submit" class="btn_alterBook" id="btn_alterBookId">Alterar Cadastro</button>
+            <button type="submit" class="btn_registerBook" id="btn_registerBookId">Cadastrar Livro</button>
+        </div>
+
+    </form>
+</div>
 
 
 </body>
