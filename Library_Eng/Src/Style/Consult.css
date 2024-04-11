@@ -1,113 +1,120 @@
-/*Container da pesquisa*/
+/* Container da pesquisa */
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 230px;
+    margin-top: 230px; /* Define a margem superior */
 }
 
-/*Form de consulta*/
+/* Formulário de consulta */
 .container .form_consult{
-    width: 900px;
-    padding: 30px;
-    border-radius: 15px;
-    background-color: aquamarine;
+    width: 900px; /* Define a largura */
+    padding: 30px; /* Define o preenchimento */
+    border-radius: 15px; /* Define o raio da borda */
+    background-color: aquamarine; /* Define a cor de fundo */
 }
 
 .container .form_consult .searchBook{
-    width: 50%;
-    height: 50px;
+    width: 50%; /* Define a largura */
+    height: 50px; /* Define a altura */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-/*Botao e pesquisar*/
-
+/* Botão de pesquisa */
 .container .form_consult .searchBook button{
-    background-color: transparent;
-    border: #b2b2b2 2px solid;
-    border-radius: 5px;
-    padding: 8px;
-    font-size: 20px;
-    cursor: pointer;
+    background-color: transparent; /* Define a cor de fundo como transparente */
+    border: #b2b2b2 2px solid; /* Define a borda */
+    border-radius: 5px; /* Define o raio da borda */
+    padding: 8px; /* Define o preenchimento */
+    font-size: 20px; /* Define o tamanho da fonte */
+    cursor: pointer; /* Define o cursor como apontador */
 }
 
 .container .form_consult .searchBook input{
-    width: 390px;
-    height: 40px;
-    border: #b2b2b2 1px solid;
-    border-radius: 8px;
-    outline: none;
+    width: 390px; /* Define a largura */
+    height: 40px; /* Define a altura */
+    border: #b2b2b2 1px solid; /* Define a borda */
+    border-radius: 8px; /* Define o raio da borda */
+    outline: none; /* Remove o contorno */
 }
 
-/*Table do banco*/
+/* Tabela de dados */
 .container .form_consult .table_data{
-    margin-left: 100px;
-    margin-top: 20px;
-    
+    margin-left: 100px; /* Define a margem esquerda */
+    margin-top: 20px; /* Define a margem superior */
 }
 
 .container .form_consult .data_consult{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
-    padding: 5px;
-    border: #b2b2b2 4px solid;
-    border-radius: 8px;
-    overflow: scroll;
-    
+    width: 90%; /* Define a largura */
+    padding: 5px; /* Define o preenchimento */
+    border: #b2b2b2 4px solid; /* Define a borda */
+    border-radius: 8px; /* Define o raio da borda */
+    overflow: scroll; /* Adiciona rolagem caso necessário */
 }
 
-.container .form_consult .data_consult th{
-    font-size: 12px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
-    font-weight: 200;
-    color: #000;
-    padding: 5px;
-    border: #b2b2b2 4px solid;
-    border-radius: 15px;
-}
-
+.container .form_consult .data_consult th,
 .container .form_consult .data_consult td{
-    font-size: 12px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
-    font-weight: 200;
-    color: #000;
-    padding: 5px;
-    border: #b2b2b2 4px solid;
-    border-radius: 15px;
+    font-size: 12px; /* Define o tamanho da fonte */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Define a fonte */
+    font-style: italic; /* Define o estilo da fonte como itálico */
+    font-weight: 200; /* Define o peso da fonte */
+    color: #000; /* Define a cor do texto */
+    padding: 5px; /* Define o preenchimento */
+    border: #b2b2b2 4px solid; /* Define a borda */
+    border-radius: 15px; /* Define o raio da borda */
 }
 
-/*botao de voltar ao cadastro*/
+/* Desativar livro */
+.inactivateBook{
+    margin-top: 20px; /* Define a margem superior */
+}
 
+.inactivateBook .btn_inactivate {
+    background-color: transparent; /* Define a cor de fundo como transparente */
+    border: #b2b2b2 2px solid; /* Define a borda */
+    border-radius: 5px; /* Define o raio da borda */
+    padding: 8px; /* Define o preenchimento */
+    font-size: 20px; /* Define o tamanho da fonte */
+    cursor: pointer; /* Define o cursor como apontador */
+}
+
+.inactivateBook .inactivateBook{
+    width: 200px; /* Define a largura */
+    height: 40px; /* Define a altura */
+    border: #b2b2b2 1px solid; /* Define a borda */
+    border-radius: 8px; /* Define o raio da borda */
+    outline: none; /* Remove o contorno */
+}
+
+/* Botão de voltar ao cadastro */
 .consultBack{
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Define a largura */
+    height: 100%; /* Define a altura */
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-direction: row;
-    margin-top: 30px;
-   
+    flex-direction: row; /* Define a direção dos elementos */
+    margin-top: 30px; /* Define a margem superior */
 }
 
 .consultBack button{
-    width: 150px;
-    height: 50px;
-    cursor: pointer;
-    outline: none;
-    border-radius: 5px;
-    background-color: transparent;
-    border: #b2b2b2 2px solid;
-    color: #b2b2b2;
+    width: 150px; /* Define a largura */
+    height: 50px; /* Define a altura */
+    cursor: pointer; /* Define o cursor como apontador */
+    outline: none; /* Remove o contorno */
+    border-radius: 5px; /* Define o raio da borda */
+    background-color: transparent; /* Define a cor de fundo como transparente */
+    border: #b2b2b2 2px solid; /* Define a borda */
+    color: #b2b2b2; /* Define a cor do texto */
 }
 
 .container .form_consult .btn_backregister:hover{
-    color: brown;
-    border: brown 2px solid;
+    color: brown; /* Define a cor do texto ao passar o mouse */
+    border: brown 2px solid; /* Define a borda ao passar o mouse */
 }

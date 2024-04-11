@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-
 /* Personalizacao Formulario*/
 .container{
     display: flex;
@@ -23,6 +22,7 @@
     background-color: aquamarine;
 }
 
+/* Comentário: Estilização dos rótulos dos campos */
 .container .formsBooks label {
     font-size: 12px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -65,10 +65,14 @@
 }
 
 /*editora do livro*/
-
 .publishing{
-    margin-left: 120px;
     margin-top: 10px;
+}
+
+/*Estoque de livros*/
+.stock{
+    margin-top: -45px;
+    margin-left: 230px
 }
 
 /*valor de aquisicao*/
@@ -92,14 +96,13 @@
 }
 
 /*sinopse - Text Area*/
-
 .sinopse{
     position: absolute;
     margin-left: 230px;
     top: 375px;
-    
 }
 
+/* Comentário: Estilização da caixa de texto da sinopse */
 .sinopse .sinopseBook{
     outline: none;
     border-radius: 5px;
@@ -107,7 +110,6 @@
 }
 
 /*dimensoes do livro*/
-
 .dimension{
     font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -134,7 +136,6 @@
     justify-content: space-around;
     flex-direction: row;
     margin-top: 30px;
-   
 }
 
 .registerQueryAlterBook button{
@@ -168,12 +169,20 @@
     margin-top: 10px;
 }
 
+.precificationGroupBook{
+    width: 200px;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+    outline: none;
+}
 
 /*Codigo de barras*/
 .codeBar{
     margin-top: 10px;
 }
 
+/* Comentário: Estilização do texto do código de barras */
 .codeBar .codeBarSpan{
     display: flex;  
     font-size: 12px;

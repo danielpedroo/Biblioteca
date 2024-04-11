@@ -18,12 +18,12 @@
     <form method="post" class="formsBooks">
         <div class="author">
             <label for="nameAuthorBookLabel">Autor </label>
-            <input type="text" class="nameAuthorBook" id="nameAuthorBookLabelId" name="nameAuthorBookLabel">
+            <input type="text" class="nameAuthorBook" id="nameAuthorBookLabelId" name="nameAuthorBookLabel" required>
         </div>
             
         <div class="category">
             <label for="categoryBookLabel">Categoria </label>
-            <select class="categoryBook" id="categoryBookId" name="categoryBookLabel">
+            <select class="categoryBook" id="categoryBookId" name="categoryBookLabel" required>
                 <option selected> -- </option>
                 <option value="genLirico">Gênero Lirico</option>
                 <option value="genEpicoNarrativo">Gênero Épico/Narrativo</option>
@@ -33,68 +33,78 @@
 
         <div class="year">
             <label for="yearBookLabel">Ano </label>
-            <input type="date" class="yearBook" id="yearBookId" name="yearBookLabel">
+            <input type="date" class="yearBook" id="yearBookId" name="yearBookLabel" required>
         </div>
 
     <div class="title">
         <label for="titleBookLabel">Titulo </label>
-        <input type="text" class="titleBook" id="titleBookId" name="titleBookLabel">
+        <input type="text" class="titleBook" id="titleBookId" name="titleBookLabel" required>
     </div>
 
     <div class="publishing">
         <label for="publishingCompanyaBookLabel">Editora </label>
-        <input type="text" class="publishingCompanyaBook" id="publishingCompanyaBookId" name="publishingCompanyaBookLabel">
+        <input type="text" class="publishingCompanyaBook" id="publishingCompanyaBookId" name="publishingCompanyaBookLabel" required>
+    </div>
+
+    <div class="stock">
+        <label for="stockLabel">Estoque</label>
+        <input type="number" class="stockBook" name="stockLabel" id="stockId" required>
     </div>
 
     <div class="aquisitionValue">
         <label for="aquisitionValueBookLabel">Valor de aquisição </label>
-        <input type="number" class="aquisitionValueBook" id="aquisitionValueBookId" name="aquisitionValueBookLabel">
+        <input type="number" class="aquisitionValueBook" id="aquisitionValueBookId" name="aquisitionValueBookLabel" required>
     </div>
 
     <div class="edition">
         <label for="editionBookLabel">Edição </label>
-        <input type="text" class="editionBook" id="editionBookId" name="editionBookLabel">
+        <input type="text" class="editionBook" id="editionBookId" name="editionBookLabel" required>
     </div>
 
     <div class="codeIsbn">
         <label for="codeIsbnBookLabel">ISBN </label>
-        <input type="number" class="codeIsbnBook" id="codeIsbnBookId" name="codeIsbnBookLabel">
+        <input type="number" class="codeIsbnBook" id="codeIsbnBookId" name="codeIsbnBookLabel" required>
     </div>
 
     <div class="numberPages">
         <label for="numberPagesBookLabel">Numero de paginas </label>
-        <input type="number" class="numberPagesBook" id="numberPagesBookId" name="numberPagesBookLabel">
+        <input type="number" class="numberPagesBook" id="numberPagesBookId" name="numberPagesBookLabel" required>
     </div>
 
     <div class="sinopse">
         <label for="sinopseBookLabel">Sinopse </label>
-        <textarea class="sinopseBook" id="sinopseBookId" cols="35" rows="10" name="sinopseBookLabel"></textarea>
+        <textarea class="sinopseBook" id="sinopseBookId" cols="35" rows="10" name="sinopseBookLabel" required></textarea>
     </div>
         
     <span class="dimension">Dimensões</span>
 
     <div class="dimensionBook">    
         <label for="heightBookLabel">Altura: </label>
-        <input type="number" class="heightBook" id="heightBookId">
+        <input type="number" class="heightBook" id="heightBookId" required>
         
         <label for="widthBookLabel">Largura: </label>
-        <input type="number" class="widthBook" id="widthBookId">
+        <input type="number" class="widthBook" id="widthBookId" required>
         
         <label for="weightBookLabel">Peso: </label>
-        <input type="number" class="weightBook" id="weightBookId">
+        <input type="number" class="weightBook" id="weightBookId" required>
         
         <label for="depthBookLabel">Profundidade: </label>
-        <input type="number" class="depthBook" id="depthBookId">
+        <input type="number" class="depthBook" id="depthBookId" required>
     </div>
     
     <div class="precificationGroup">
         <label for="precificationGroupLabel">Precificação</label>
-        <input type="number" name="precificationGroupLabel" id="precificationGroupId">
+            <select class="precificationGroupBook" id="precificationGroupBookId" name="precificationGroupLabel" required>
+                <option selected> -- </option>
+                <option value="livroBolso">Livros de Bolso</option>
+                <option value="livroCapaDura">Livros de Capa Dura</option>
+                <option value="livroDidatico">Livros Didaticos</option>
+            </select>
     </div>
 
     <div class="codeBar">
         <span class="codeBarSpan">Código de Barras</i></span>
-        <input type="text" id="codeBarId">
+        <input type="text" id="codeBarId" required> 
     </div>
     
 
